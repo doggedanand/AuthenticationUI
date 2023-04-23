@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import ValidateForm from '../../helper/validateform';
 import { AuthService } from 'src/app/service/auth.service';
 import { Router } from '@angular/router';
@@ -16,7 +16,7 @@ export class SignupComponent implements OnInit {
   eyeIcon: string = "fa-eye-slash";
   signUpForm!: FormGroup;
 
-  constructor(private fb: FormBuilder, private auth: AuthService,private router:Router) { }
+  constructor(private fb: FormBuilder, private auth: AuthService, private router: Router) { }
 
   ngOnInit(): void {
     this.signUpForm = this.fb.group({

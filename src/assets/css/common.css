@@ -16,6 +16,11 @@
     cursor: pointer;
 }
 
+.panel{
+    box-shadow: 12px 12px 22px rgb(120, 119, 119);
+    box-shadow: 6px 6px 11px rgb(120, 119, 119);
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -91,6 +96,6 @@ input[type='password'] {
 }
 
 .bordert a img {
-    width: 7%;
+    width: 8%;
 
 }

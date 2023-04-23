@@ -29,7 +29,7 @@ export class LoginComponent implements OnInit {
   }
   onLogin() {
     if (this.loginForm.valid) {
-      console.warn(this.loginForm.value);
+      // console.warn(this.loginForm.value);
       // Send the obj to database
       this.auth.login(this.loginForm.value)
         .subscribe({
